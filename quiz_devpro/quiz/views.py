@@ -27,6 +27,7 @@ def indice(requisicao):
 
 def perguntas(requisicao, indice):
     aluno_id = requisicao.session['aluno_id']
+    # Mostrar a página de classificação
     pergunta = Pergunta.objects.filter(disponivel = True).order_by('id')[indice -1]
 
     contexto = {'indice': indice, 'pergunta': pergunta}
