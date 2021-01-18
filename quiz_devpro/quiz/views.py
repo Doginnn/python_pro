@@ -10,8 +10,8 @@ def indice(requisicao):
         try:
             aluno = Aluno.objects.get(email=email)
         except Aluno.DoesNotExist:
-        requisicao.session['aluno_id'] = aluno.id
-        return redirect('/perguntas/1')
+            requisicao.session['aluno_id'] = aluno.id
+            return redirect('/perguntas/1')
 
         form = AlunoForm(requisicao.POST)
         if form.is_valid():
