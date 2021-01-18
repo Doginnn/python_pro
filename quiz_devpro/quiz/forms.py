@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-# Falta importar algo aqui
+from quiz_devpro.quiz.models import Aluno
 
 
 class AlunoForm(ModelForm):
