@@ -20,7 +20,7 @@ Aplicativo no estilo QUIZ, desenvolvido durante a semana Python Pro.
     pipenv install
     ```
 
-4. Sincronize a base de dados com os comandos 4 e 4.1:
+4. Sincronize a base de dados com os comandos 4 e 5:
 
     ```bash
     python manage.py makemigrations
@@ -29,8 +29,8 @@ Aplicativo no estilo QUIZ, desenvolvido durante a semana Python Pro.
    
    ```bash
     python manage.py migrate
-   ``
-
+   ```
+   
 6. Crie um usuário (Administrador do sistema): Nesse caso o meu Usuário ADM é `"teste"` e Senha ADM é `"123Teste!"`, não esqueça de configurar esse usuário e senha lá em `settings.py`>>`DATABASES`.
 
     ```bash
